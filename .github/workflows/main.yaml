@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Run archive
       id: archive
-      uses: zulip/zulip-archive@master
+      uses: zulip/zulip-archive@eb1605d1557c6650cce7f2dc0dad95aca257658a
       with:
         zulip_organization_url: ${{ secrets.zulip_organization_url }}
         zulip_bot_email: ${{ secrets.zulip_bot_email }}
