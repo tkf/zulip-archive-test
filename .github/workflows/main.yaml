@@ -1,6 +1,6 @@
 on:
-  schedule:
-   - cron: '*/20 * * * *'
+  # schedule:
+  #  - cron: '*/20 * * * *'
   push:
     branches:
       - actions/trigger/main
