@@ -1,0 +1,19 @@
+{
+    "streams": {
+        "tkf/zulip-archive-test": {
+            "id": 259919,
+            "latest_id": 212249078,
+            "topic_data": {
+                "stream events": {
+                    "latest_date": 1601854449,
+                    "size": 1
+                },
+                "test topic": {
+                    "latest_date": 1601858343,
+                    "size": 2
+                }
+            }
+        }
+    },
+    "time": 1601861152.6652675
+}
