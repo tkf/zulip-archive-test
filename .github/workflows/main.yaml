@@ -3,7 +3,6 @@ on:
    - cron: '*/20 * * * *'
   push:
     branches:
-      - master
       - actions/trigger/main
   workflow_dispatch:
 
