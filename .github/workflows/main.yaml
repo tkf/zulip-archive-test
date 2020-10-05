@@ -12,7 +12,14 @@ jobs:
     name: A job to publish zulip-archive in GitHub pages
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
+      with:
+        ref: master
+    - run: |
+        cat <<EOF > streams.yaml
+        included:
+          - tkf/zulip-archive-test
+        EOF
     - name: Run archive
       id: archive
       uses: zulip/zulip-archive@eb1605d1557c6650cce7f2dc0dad95aca257658a
