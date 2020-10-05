@@ -14,12 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: master
-    - run: |
-        cat <<EOF > streams.yaml
-        included:
-          - tkf/zulip-archive-test
-        EOF
+        ref: template
     - name: Run archive
       id: archive
       uses: zulip/zulip-archive@eb1605d1557c6650cce7f2dc0dad95aca257658a
@@ -28,4 +23,3 @@ jobs:
         zulip_bot_email: ${{ secrets.zulip_bot_email }}
         zulip_bot_key: ${{ secrets.zulip_bot_key }}
         github_personal_access_token: ${{ secrets.gh_personal_access_token }}
-        delete_history: true
