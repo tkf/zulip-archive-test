@@ -1,4 +1,4 @@
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-hacker
 url: "https://tkf.github.io"
 baseurl: "/zulip-archive-test"
 keep_files: ["assets"]
